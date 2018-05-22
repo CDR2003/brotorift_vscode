@@ -1,0 +1,26 @@
+{
+    "name": "brotorift",
+    "displayName": "Brotorift",
+    "description": "Brotorift Language Service",
+    "version": "0.0.1",
+    "publisher": "peter-ren",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "brotorift",
+            "aliases": ["Brotorift", "brotorift"],
+            "extensions": [".brotorift"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "brotorift",
+            "scopeName": "source.brotorift",
+            "path": "./syntaxes/Brotorift.tmLanguage"
+        }]
+    }
+}
