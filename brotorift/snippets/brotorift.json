@@ -1,0 +1,88 @@
+{
+    "node": {
+        "prefix": "node",
+        "body": [
+            "node ${language} ${NodeName} as ${Abbr} namespace ${namespace}",
+            "$0"
+        ],
+        "description": "Insert node definition"
+    },
+
+    "enum": {
+        "prefix": "enum",
+        "body": [
+            "enum ${EnumType}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert enum definition"
+    },
+
+    "struct": {
+        "prefix": "struct",
+        "body": [
+            "struct ${StructType}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert struct definition"
+    },
+
+    "direction C -> S": {
+        "prefix": "dircs",
+        "body": [
+            "direction ${Client} -> ${Server}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert direction C -> S block"
+    },
+
+    "direction C <- S": {
+        "prefix": "dirsc",
+        "body": [
+            "direction ${Client} <- ${Server}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert direction C <- S block"
+    },
+
+    "message": {
+        "prefix": "message",
+        "body": [
+            "message ${MessageName}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert message definition"
+    },
+
+    "sequence": {
+        "prefix": "sequence",
+        "body": [
+            "sequence ${SequenceName}",
+            "    $0",
+            "end"
+        ],
+        "description": "Insert sequence"
+    },
+
+    "stepcs": {
+        "prefix": "stepcs",
+        "body": [
+            "${C} -> ${S}: ${MessageName}",
+            "$0"
+        ],
+        "description": "Insert sequence step C -> S"
+    },
+
+    "stepsc": {
+        "prefix": "stepsc",
+        "body": [
+            "${C} <- ${S}: ${MessageName}",
+            "$0"
+        ],
+        "description": "Insert sequence step C <- S"
+    }
+}
