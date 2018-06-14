@@ -1,9 +1,16 @@
 {
+    "include": {
+        "prefix": "include",
+        "body": [
+            "include '${file_path_without_ext}'"
+        ],
+        "description": "Insert include statement"
+    },
+
     "node": {
         "prefix": "node",
         "body": [
-            "node ${language} ${NodeName} as ${Abbr} namespace ${namespace}",
-            "$0"
+            "node ${language} ${NodeName} as ${Abbr} namespace ${namespace}$0"
         ],
         "description": "Insert node definition"
     },
@@ -71,8 +78,7 @@
     "stepcs": {
         "prefix": "stepcs",
         "body": [
-            "${C} -> ${S}: ${MessageName}",
-            "$0"
+            "${C} -> ${S}: ${MessageName}$0"
         ],
         "description": "Insert sequence step C -> S"
     },
@@ -80,8 +86,7 @@
     "stepsc": {
         "prefix": "stepsc",
         "body": [
-            "${C} <- ${S}: ${MessageName}",
-            "$0"
+            "${C} <- ${S}: ${MessageName}$0"
         ],
         "description": "Insert sequence step C <- S"
     }

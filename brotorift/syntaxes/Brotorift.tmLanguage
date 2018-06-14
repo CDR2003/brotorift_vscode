@@ -16,6 +16,27 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.include.brotorift</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.brotorift</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>include</string>
+			<key>match</key>
+			<string>\b(include)\s+\'([A-Za-z0-9_]*)\'</string>
+			<key>name</key>
+			<string>meta.include.brotorift</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>keyword.node.brotorift</string>
 				</dict>
 				<key>2</key>
