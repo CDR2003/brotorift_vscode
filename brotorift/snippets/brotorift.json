@@ -1,4 +1,12 @@
 {
+    "version": {
+        "prefix": "version",
+        "body": [
+            "version ${version_number}"
+        ],
+        "description": "Insert version"
+    },
+
     "include": {
         "prefix": "include",
         "body": [

@@ -2,7 +2,7 @@
     "name": "brotorift",
     "displayName": "Brotorift",
     "description": "Brotorift Language Service",
-    "version": "0.1.1",
+    "version": "0.2.1",
     "publisher": "peter-ren",
     "engines": {
         "vscode": "^1.23.0"

@@ -16,6 +16,27 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+					<string>keyword.version.brotorift</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.decimal.brotorift</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>version</string>
+			<key>match</key>
+			<string>\b(version)\s+(\d+)</string>
+			<key>name</key>
+			<string>meta.version.brotorift</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
 					<string>keyword.include.brotorift</string>
 				</dict>
 				<key>2</key>
